@@ -1,20 +1,122 @@
 body {
-  font-family: Roboto Condensed, arial, sans-serif;
+  font-family: Helvetica, arial, sans-serif;
 }
+/*************************
+Navigation**************/
+
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav a {
+  padding: 5px;
+  color: #cc3333;
+  font-size: .7em;
+  background-color: lightgrey;
+  text-decoration: none;
+}
+
+.navLeft{
+  float: left;
+  background-color: blue;
+  text-transform: uppercase;
+}
+
+.navRight {
+  background-color: blue;
+
+  float: right;
+}
+
+.logo {
+  width: 35px;
+}
+
+.cart {
+  width: 15px;
+}
+
+/*************************
+Section Top Banner********/
+
+/*Graphic and Containers*/
 
 .topBanner {
-  background-color: red;
+  clear: both;
+  background-image:  linear-gradient(to right, #cc3366, #ff3333);
+  color: white;
+  padding: 2% 0;
+  height: 100%;
 }
-
 .shoeGraphic {
-  width: 50%
-  float: left;
+  display: inline-block;
+  width: 40%;
+  /*background-color: lightblue;*/
+  margin-left: 5%;
+  margin-right: 5%;
+  text-transform: uppercase;
+  font-size: .5em;
+}
+.bannerContent {
+  display: inline-block;
+  width: 36%;
+  margin-left: 7%;
+  margin-right: 7%;
+  /*background-color: lightgreen;*/
+  float: right;
+}
+.shoe {
+  width: 350px;
+  display: block;
+  padding-top: 25px;
 }
 
-.shoeGraphic img {
-  width: 20%;
+/*Text*/
+
+h1 {
+  margin: 0 0 .2em;
 }
- .bannerContent {
-   width: 50%;
-   float: right;
- }
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #cc3333;
+}
+.bannerContent p {
+  margin: 0;
+  font-size: .9em;
+  line-height: 1.5em;
+  display: inline;
+}
+.price {
+  display: inline-block;
+}
+.price sup{
+  font-size: .1em;
+}
+.reviews {
+  text-align: right;
+  color: #cc3333;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+}
+.buyButton {
+  display: inline-block;
+  color: #cc3333;
+  text-transform: uppercase;
+  background-color: white;
+  padding: .5em;
+  border-radius: 10px;
+}
+.dashed {
+  border: 1px #cc3333 dashed;
+}
+
+/*************************
+Section Body Conent *****/
+
+.bodyContent {
+  background-color: yellow;
+  clear: both;
+}

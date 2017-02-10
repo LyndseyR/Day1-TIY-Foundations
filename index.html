@@ -3,30 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>TIY Mockup</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header>
       <div class="nav">
-        <img src="images/logo.jpg" alt="Logo">
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">Boys</a>
-        <a href="#">Girls</a>
-        <a href="#">Customize</a>
+        <div class="navLeft">
+          <ul>
+            <li><img class="logo" src="images/logo.jpg" alt="Logo"></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Boys</a></li>
+            <li><a href="#">Girls</a></li>
+            <li><a href="#">Customize</a></li>
+          </ul>
+        </div>
+        <div class="navRight">
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><img class="cart" src="images/cart.jpg" alt="Shopping Cart"></li>
+            <li><a href="#">Shopping Cart (Items)</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="navHeader">
-        <a href="#">Help</a>
-        <a href="#">My Account</a>
-        <img src="images/cart.jpg" alt="Shopping Cart">
-        <a href="#">Shopping Cart (Items)</a>
     </header>
 
     <section class="topBanner">
       <div class="shoeGraphic">
         &larr; back to all shoes
-        <img src="images/shoe1.png" alt="Black Converse">
+        <img class="shoe" src="images/shoe1.png" alt="Black Converse">
       </div>
       <div class="bannerContent">
         <h1>
@@ -39,7 +45,7 @@
         <p>
           ursus sed a a adipiscing molestie a est ridiculus aptent etiam netus quis adipiscing bibendum eleifend paturiend aptent a a vulputate nam justo nec nam
         </p>
-        <a href="#">Read The Reviews</a>
+        <a href="#"><p class="reviews">Read The Reviews</p></a>
         <hr class="dashed">
         <p class="price"><sup>$</sup>120<sup>00</sup></p>
         <p class="buyButton">Buy Now!</p>
@@ -95,18 +101,22 @@
 
     <footer>
       <div class="nav">
-        <img src="images/logo.jpg" alt="Logo">
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">Boys</a>
-        <a href="#">Girls</a>
-        <a href="#">Customize</a>
+        <div class="navLeft">
+          <ul>
+            <li><img class="logo" src="images/logo.jpg" alt="Logo"></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Boys</a></li>
+            <li><a href="#">Girls</a></li>
+            <li><a href="#">Customize</a></li>
+          </ul>
+        </div>
+        <div class="navFooter">
+          <a href="#">Shipping</a> &vert;
+          <a href="#">Terms &amp; Conditions</a> &vert;
+          <a href="#">&copy; Copyright 2017, Sneaker Shop, LLC.</a>
       </div>
-      <div class="navFooter">
-        <a href="#">Shipping</a> &vert;
-        <a href="#">Terms &amp; Conditions</a> &vert;
-        <a href="#">&copy; Copyright 2017, Sneaker Shop, LLC.</a>
-      </div>
+    </div>
     </footer>
   </body>
 </html>
