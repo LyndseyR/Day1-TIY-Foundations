@@ -13,19 +13,17 @@ Navigation**************/
   padding: 5px;
   color: #cc3333;
   font-size: .7em;
-  background-color: lightgrey;
   text-decoration: none;
 }
 
 .navLeft{
   float: left;
-  background-color: blue;
   text-transform: uppercase;
+  margin-left: 10px;
 }
 
 .navRight {
-  background-color: blue;
-
+  margin-right: 10px;
   float: right;
 }
 
@@ -37,6 +35,10 @@ Navigation**************/
   width: 15px;
 }
 
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
 /*************************
 Section Top Banner********/
 
@@ -49,10 +51,14 @@ Section Top Banner********/
   padding: 2% 0;
   height: 100%;
 }
+.clearfix {
+  zoom: 1;
+  overflow: auto; 
+}
+
 .shoeGraphic {
   display: inline-block;
   width: 40%;
-  /*background-color: lightblue;*/
   margin-left: 5%;
   margin-right: 5%;
   text-transform: uppercase;
@@ -63,7 +69,6 @@ Section Top Banner********/
   width: 36%;
   margin-left: 7%;
   margin-right: 7%;
-  /*background-color: lightgreen;*/
   float: right;
 }
 .shoe {
