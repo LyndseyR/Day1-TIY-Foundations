@@ -1,80 +1,114 @@
 body {
-  font-family: Helvetica, arial, sans-serif;
+  font-family: Jaldi, arial, sans-serif;
+  max-width: 900px;
+  min-width: 900px;
+  margin: auto;
 }
 /*************************
 Navigation**************/
 
+.navLeft a:hover{
+  color: #b22800;
+  border-bottom: 2px solid #b22800;
+}
+.tabs {
+  display: inline-block;
+}
+.tabs a:hover{
+  color: #b22800;
+  border-bottom: 2px solid #b22800;
+}
+.bodyContent ul {
+  margin: 0;
+}
 .nav li {
   list-style-type: none;
   display: inline-block;
 }
-
 .nav a {
-  padding: 5px;
-  color: #cc3333;
+  padding: 5px 5px 0;
+  color: #ff4f25;
   font-size: .7em;
   text-decoration: none;
 }
-
+section .nav a{
+  font-size: 1em;
+}
 .navLeft{
   float: left;
   text-transform: uppercase;
   margin-left: 10px;
 }
-
 .navRight {
   margin-right: 10px;
   float: right;
+  font-size: .7em;
 }
-
 .logo {
   width: 35px;
 }
-
 .cart {
   width: 15px;
 }
-
 ul {
-  margin: 0 0 10px;
+  margin: 10px 0 10px;
   padding: 0;
 }
+
 /*************************
 Section Top Banner********/
 
 /*Graphic and Containers*/
 
-.topBanner {
+.banner {
   clear: both;
-  background-image:  linear-gradient(to right, #cc3366, #ff3333);
+  background-image:  linear-gradient(to right, #e11e70, #ff4f25);
   color: white;
   padding: 2% 0;
-  height: 100%;
 }
 .clearfix {
   zoom: 1;
-  overflow: auto; 
+  overflow: auto;
 }
 
 .shoeGraphic {
   display: inline-block;
-  width: 40%;
-  margin-left: 5%;
+  width: 35%;
+  margin-left: 10%;
   margin-right: 5%;
   text-transform: uppercase;
   font-size: .5em;
 }
 .bannerContent {
   display: inline-block;
-  width: 36%;
-  margin-left: 7%;
-  margin-right: 7%;
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 10%;
   float: right;
 }
 .shoe {
   width: 350px;
   display: block;
   padding-top: 25px;
+}
+.buyButton {
+  display: inline-block;
+  color: #ff4f25;
+  text-transform: uppercase;
+  background-color: white;
+  padding: .5em;
+  border-radius: 10px;
+  margin-left: 1.2em;
+}
+.bannerContent p {
+  margin: 0;
+  font-size: .9em;
+  line-height: 1.5em;
+  display: inline;
+}
+.dashed {
+  border: 1px #cc3333 dashed;
+  margin-bottom: 10px;
 }
 
 /*Text*/
@@ -85,43 +119,107 @@ h1 {
 h6 {
   margin: 0;
   text-transform: uppercase;
-  color: #cc3333;
-}
-.bannerContent p {
-  margin: 0;
-  font-size: .9em;
-  line-height: 1.5em;
-  display: inline;
+  color: #9f293b;
 }
 .price {
   display: inline-block;
+  font-size: 1.5em;
 }
 .price sup{
-  font-size: .1em;
+  font-size: .5em;
 }
 .reviews {
   text-align: right;
-  color: #cc3333;
+  color: #9f293b;
   text-decoration: none;
   display: inline-block;
   float: right;
 }
-.buyButton {
-  display: inline-block;
-  color: #cc3333;
-  text-transform: uppercase;
-  background-color: white;
-  padding: .5em;
-  border-radius: 10px;
+
+/*************************
+Section Body Content *****/
+
+.bodyContent {
+  clear: both;
+  margin: 0 10% 50px;
 }
-.dashed {
-  border: 1px #cc3333 dashed;
+.bodyContent .nav {
+  padding-top: 20px;
+}
+.bodyContent hr{
+  border: 1px solid pink;
+  margin-top:0;
+}
+
+.bodyContent p{
+  font-size: .75em;
+  color: grey;
+  margin: 0;
+}
+
+h5{
+  margin: 5px 0;
+}
+
+h3 {
+  margin: 15px 0 5px;
 }
 
 /*************************
-Section Body Conent *****/
+Section Bottom Banner Content**/
 
-.bodyContent {
-  background-color: yellow;
-  clear: both;
+.shopRecommend{
+  background-color: #feebef;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.sneaker img {
+  width: 100%;
+}
+
+.sneaker {
+  display: inline-block;
+  width: 25%;
+  margin:20px 2%;
+  text-align: left;
+}
+
+.sneakerGroup {
+  text-align: center;
+}
+
+.sneakerName {
+  display: inline-block;
+  font-size: 1.2em;
+  float: left;
+}
+
+.sneakerPrice {
+  display: inline-block;
+  font-size: 1em;
+  float: right;
+}
+
+.sneakerPrice sup {
+  font-size: .5em;
+}
+
+.sneaker p {
+  margin:0;
+}
+.sneakerRelease {
+clear: both;
+}
+
+/*************************
+Footer*******************/
+footer .navRight a {
+  color: gray;
+  text-decoration: underline;
+}
+footer .navRight {
+  color: gray;
+  font-size: .7em;
 }

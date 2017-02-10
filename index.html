@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>TIY Mockup</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -29,7 +30,7 @@
       </div>
     </header>
 
-    <section class="topBanner clearfix">
+    <section class="banner clearfix">
       <div class="shoeGraphic">
         &larr; back to all shoes.
         <img class="shoe" src="images/shoe1.png" alt="Black Converse">
@@ -47,15 +48,19 @@
         </p>
         <a href="#"><p class="reviews">Read The Reviews</p></a>
         <hr class="dashed">
-        <p class="price"><sup>$</sup>120<sup>00</sup></p>
-        <p class="buyButton">Buy Now!</p>
+        <div class="price"><sup>$</sup>120<sup>00</sup></div>
+        <div class="buyButton">Buy Now!</div>
       </div>
     </section>
 
     <section class="bodyContent">
-      <a href="#">Product Details</a>
-      <a href="#">Size &amp; Fit</a>
-      <a href="#">Reviews</a>
+      <ul class="nav">
+        <div class="tabs">
+          <li><a href="#">Product Details</a></li>
+          <li><a href="#">Size &amp; Fit</a></li>
+        </div>
+        <li class="navRight"><a href="#">Reviews</a></li>
+      </ul>
       <hr>
       <h3>
         Exciting Topic
@@ -73,29 +78,31 @@
         What Our Customers Are Saying!
       </h3>
       <p>Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed in your purchase.</p>
-      <div class="shopRecommend">
-        Shop Recommended Shoes
-      </div>
     </section>
 
-    <section class="bottomBanner">
-      <div class="funny">
-        <img src="images/shoe2.png" alt="Funny Sneakers">
-        <p class="sneakerName">Funny Sneakers</p>
-        <p class="sneakerPrice"><sup>$</sup>120<sup>00</sup></p>
-        <p class="sneakerRelease">Spring/Summer 2017</p>
-      </div>
-      <div class="nimble">
-        <img src="images/shoe3.png" alt="Nimble Sneakers">
-        <p class="sneakerName">Nimble Sneakers</p>
-        <p class="sneakerPrice"><sup>$</sup>120<sup>00</sup></p>
-        <p class="sneakerRelease">Spring/Summer 2017</p>
-      </div>
-      <div class="cute">
-        <img src="images/shoe4.png" alt="Cute Sneakers">
-        <p class="sneakerName">Cute Sneakers</p>
-        <p class="sneakerPrice"><sup>$</sup>120<sup>00</sup></p>
-        <p class="sneakerRelease">Spring/Summer 2017</p>
+    <div class="shopRecommend">
+      Shop Recommended Shoes
+    </div>
+    <section class="banner">
+      <div class="sneakerGroup">
+        <div class="sneaker">
+          <img src="images/shoe2.png" alt="Funny Sneakers">
+          <p class="sneakerName">Funny Sneakers</p>
+          <p class="sneakerPrice"><sup>$</sup>120<sup>00</sup></p>
+          <h6 class="sneakerRelease">Spring/Summer 2017</h6>
+        </div>
+        <div class="sneaker">
+          <img src="images/shoe3.png" alt="Nimble Sneakers">
+          <p class="sneakerName">Nimble Sneakers</p>
+          <p class="sneakerPrice"><sup>$</sup>120<sup>00</sup></p>
+          <h6 class="sneakerRelease">Spring/Summer 2017</h6>
+        </div>
+        <div class="sneaker">
+          <img src="images/shoe4.png" alt="Cute Sneakers">
+          <p class="sneakerName">Cute Sneakers</p>
+          <p class="sneakerPrice"><sup>$</sup>120<sup>00</sup></p>
+          <h6 class="sneakerRelease">Spring/Summer 2017</h6>
+        </div>
       </div>
     </section>
 
@@ -111,12 +118,14 @@
             <li><a href="#">Customize</a></li>
           </ul>
         </div>
-        <div class="navFooter">
-          <a href="#">Shipping</a> &vert;
-          <a href="#">Terms &amp; Conditions</a> &vert;
-          <a href="#">&copy; Copyright 2017, Sneaker Shop, LLC.</a>
+        <div class="navRight">
+          <ul>
+            <li><a href="#">Shipping</a> &vert;</li>
+            <li><a href="#">Terms &amp; Conditions</a> &vert;</li>
+            <li>&copy; Copyright 2017, Sneaker Shop, LLC.</li>
+          </ul>
+        </div>
       </div>
-    </div>
     </footer>
   </body>
 </html>
