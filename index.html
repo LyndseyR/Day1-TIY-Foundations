@@ -3,34 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>TIY Mockup</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="nav">
-        <div class="navLeft">
-          <ul>
-            <li><img class="logo" src="images/logo.jpg" alt="Logo"></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Boys</a></li>
-            <li><a href="#">Girls</a></li>
-            <li><a href="#">Customize</a></li>
-          </ul>
-        </div>
-        <div class="navRight">
-          <ul>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><img class="cart" src="images/cart.jpg" alt="Shopping Cart"></li>
-            <li><a href="#">Shopping Cart (Items)</a></li>
-          </ul>
-        </div>
-      </div>
+      <navLeft>
+        <ul>
+          <li><img class="logo" src="images/logo.jpg" alt="Logo"></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Boys</a></li>
+          <li><a href="#">Girls</a></li>
+          <li><a href="#">Customize</a></li>
+        </ul>
+      </navLeft>
+      <navRight>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><img class="cart" src="images/cart.jpg" alt="Shopping Cart"></li>
+          <li><a href="#">Shopping Cart (Items)</a></li>
+        </ul>
+      </navRight>
     </header>
 
-    <section class="banner clearfix">
+    <section class="banner container clearfix">
       <div class="shoeGraphic">
         &larr; back to all shoes.
         <img class="shoe" src="images/shoe1.png" alt="Black Converse">
@@ -53,16 +52,16 @@
       </div>
     </section>
 
-    <section class="bodyContent">
-      <ul class="nav">
+    <section class="bodyContent container">
+      <ul>
         <div class="tabs">
           <li><a href="#">Product Details</a></li>
           <li><a href="#">Size &amp; Fit</a></li>
         </div>
-        <li class="navRight"><a href="#">Reviews</a></li>
+        <li class="tabRight"><a href="#">Reviews &#9733;&#9733;&#9733;&#9733;&#9734;</a></li>
       </ul>
-      <hr>
-      <h3>
+
+      <h3><hr>
         Exciting Topic
       </h3>
       <p>Content here</p>
@@ -80,10 +79,11 @@
       <p>Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed in your purchase.</p>
     </section>
 
-    <div class="shopRecommend">
-      Shop Recommended Shoes
-    </div>
-    <section class="banner">
+
+    <section class="banner container">
+      <div class="shopRecommend">
+        Shop Recommended Shoes
+      </div>
       <div class="sneakerGroup">
         <div class="sneaker">
           <img src="images/shoe2.png" alt="Funny Sneakers">
@@ -107,8 +107,7 @@
     </section>
 
     <footer>
-      <div class="nav">
-        <div class="navLeft">
+        <navLeft>
           <ul>
             <li><img class="logo" src="images/logo.jpg" alt="Logo"></li>
             <li><a href="#">Men</a></li>
@@ -117,15 +116,14 @@
             <li><a href="#">Girls</a></li>
             <li><a href="#">Customize</a></li>
           </ul>
-        </div>
-        <div class="navRight">
+        </navLeft>
+        <navRight>
           <ul>
             <li><a href="#">Shipping</a> &vert;</li>
             <li><a href="#">Terms &amp; Conditions</a> &vert;</li>
             <li>&copy; Copyright 2017, Sneaker Shop, LLC.</li>
           </ul>
-        </div>
-      </div>
+        </navRight>
     </footer>
   </body>
 </html>

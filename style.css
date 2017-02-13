@@ -1,48 +1,46 @@
 body {
   font-family: Jaldi, arial, sans-serif;
+}
+.container {
   max-width: 900px;
-  min-width: 900px;
+  min-width: 725px;
   margin: auto;
 }
-/*************************
-Navigation**************/
-
-.navLeft a:hover{
-  color: #b22800;
-  border-bottom: 2px solid #b22800;
-}
-.tabs {
-  display: inline-block;
-}
-.tabs a:hover{
-  color: #b22800;
-  border-bottom: 2px solid #b22800;
+ul {
+  margin: 10px 0 15px;
+  padding: 0;
 }
 .bodyContent ul {
   margin: 0;
 }
-.nav li {
-  list-style-type: none;
+/*************************
+Navigation**************/
+
+/***Header and Footer****/
+
+header li, footer li {
   display: inline-block;
+  text-decoration: none;
+  padding: 5px 2px 0;
 }
-.nav a {
-  padding: 5px 5px 0;
+header a, footer navLeft a {
   color: #ff4f25;
-  font-size: .7em;
+  font-size: 1em;
   text-decoration: none;
 }
-section .nav a{
-  font-size: 1em;
-}
-.navLeft{
+navLeft{
   float: left;
   text-transform: uppercase;
   margin-left: 10px;
 }
-.navRight {
+navRight {
   margin-right: 10px;
   float: right;
   font-size: .7em;
+}
+navLeft a:hover{
+  color: #b22800;
+  border-bottom: 2px solid #b22800;
 }
 .logo {
   width: 35px;
@@ -50,9 +48,32 @@ section .nav a{
 .cart {
   width: 15px;
 }
-ul {
-  margin: 10px 0 10px;
-  padding: 0;
+/***Tabs***************/
+.bodyContent li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px 0 5px;
+}
+.tabs {
+  float: left;
+}
+.tabs a {
+  color: #ff4f25;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.tabs a:hover{
+  color: #b22800;
+  border-bottom: 2px solid #b22800;
+}
+.tabRight {
+  float: right;
+}
+.tabRight a {
+  color: #ff4f25;
+  font-size: .7em;
+  text-decoration: none;
 }
 
 /*************************
@@ -116,6 +137,13 @@ Section Top Banner********/
 h1 {
   margin: 0 0 .2em;
 }
+h3 {
+  clear: both;
+  margin: 15px 0 5px;
+}
+h5 {
+  margin: 5px 0;
+}
 h6 {
   margin: 0;
   text-transform: uppercase;
@@ -125,8 +153,9 @@ h6 {
   display: inline-block;
   font-size: 1.5em;
 }
-.price sup{
+.price sup, .sneakerPrice sup{
   font-size: .5em;
+  vertical-align: top;
 }
 .reviews {
   text-align: right;
@@ -143,26 +172,14 @@ Section Body Content *****/
   clear: both;
   margin: 0 10% 50px;
 }
-.bodyContent .nav {
-  padding-top: 20px;
-}
 .bodyContent hr{
   border: 1px solid pink;
   margin-top:0;
 }
-
 .bodyContent p{
   font-size: .75em;
   color: grey;
   margin: 0;
-}
-
-h5{
-  margin: 5px 0;
-}
-
-h3 {
-  margin: 15px 0 5px;
 }
 
 /*************************
@@ -215,11 +232,11 @@ clear: both;
 
 /*************************
 Footer*******************/
-footer .navRight a {
+footer navRight a {
   color: gray;
   text-decoration: underline;
 }
-footer .navRight {
+footer navRight {
   color: gray;
   font-size: .7em;
 }
