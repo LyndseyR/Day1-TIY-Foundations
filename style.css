@@ -2,8 +2,7 @@ body {
   font-family: Jaldi, arial, sans-serif;
 }
 .container {
-  max-width: 900px;
-  min-width: 725px;
+  min-width: 800px;
   margin: auto;
 }
 ul {
@@ -13,32 +12,41 @@ ul {
 .bodyContent ul {
   margin: 0;
 }
+.padding {
+  padding: 2% 0;
+  margin: auto;
+  max-width: 800px;
+}
 /*************************
 Navigation**************/
 
 /***Header and Footer****/
+
+nav {
+  display: inline-block;
+}
 
 header li, footer li {
   display: inline-block;
   text-decoration: none;
   padding: 5px 2px 0;
 }
-header a, footer navLeft a {
+header a, footer .navLeft a {
   color: #ff4f25;
   font-size: 1em;
   text-decoration: none;
 }
-navLeft{
+.navLeft{
   float: left;
   text-transform: uppercase;
   margin-left: 10px;
 }
-navRight {
+.navRight {
   margin-right: 10px;
   float: right;
   font-size: .7em;
 }
-navLeft a:hover{
+.navLeft a:hover{
   color: #b22800;
   border-bottom: 2px solid #b22800;
 }
@@ -48,7 +56,9 @@ navLeft a:hover{
 .cart {
   width: 15px;
 }
+
 /***Tabs***************/
+
 .bodyContent li {
   display: inline-block;
   list-style-type: none;
@@ -75,7 +85,15 @@ navLeft a:hover{
   font-size: .7em;
   text-decoration: none;
 }
-
+#details {
+  display: inherit;
+}
+#size {
+  display: none;
+}
+#review {
+  display: none;
+}
 /*************************
 Section Top Banner********/
 
@@ -83,15 +101,18 @@ Section Top Banner********/
 
 .banner {
   clear: both;
-  background-image:  linear-gradient(to right, #e11e70, #ff4f25);
+  /*background-image:  linear-gradient(to right, #e11e70, #ff4f25);*/
+    background: #e11e70; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #e11e70, #ff4f25); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e11e70, #ff4f25); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e11e70, #ff4f25); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, r#e11e70, #ff4f25); /* Standard syntax (must be last) */
   color: white;
-  padding: 2% 0;
 }
 .clearfix {
   zoom: 1;
   overflow: auto;
 }
-
 .shoeGraphic {
   display: inline-block;
   width: 35%;
@@ -102,7 +123,7 @@ Section Top Banner********/
 }
 .bannerContent {
   display: inline-block;
-  width: 30%;
+  width: 260px;
   margin-left: 5%;
   margin-right: 10%;
   float: right;
@@ -117,9 +138,31 @@ Section Top Banner********/
   color: #ff4f25;
   text-transform: uppercase;
   background-color: white;
-  padding: .5em;
+  padding: 1em;
   border-radius: 10px;
-  margin-left: 1.2em;
+  margin-left: 1em;
+  border: 0;
+}
+button {
+  display: inline-block;
+  color: #ff4f25;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  margin-left: 1em;
+  border: 0;
+}
+button:focus{
+  outline: 0;
+}
+.buyButton:hover {
+  color:white;
+  background-color: #871028;
+}
+button:hover {
+  color:white;
+  background-color: #871028;
 }
 .bannerContent p {
   margin: 0;
@@ -170,7 +213,9 @@ Section Body Content *****/
 
 .bodyContent {
   clear: both;
-  margin: 0 10% 50px;
+  margin: 1% auto 3%;
+  padding: 0 10%;
+  min-width: 650px;
 }
 .bodyContent hr{
   border: 1px solid pink;
@@ -232,11 +277,11 @@ clear: both;
 
 /*************************
 Footer*******************/
-footer navRight a {
+footer .navRight a {
   color: gray;
   text-decoration: underline;
 }
-footer navRight {
+footer .navRight {
   color: gray;
   font-size: .7em;
 }

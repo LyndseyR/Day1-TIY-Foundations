@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <navLeft>
+    <header class="container">
+      <nav>
+        <div class="navLeft">
         <ul>
           <li><img class="logo" src="images/logo.jpg" alt="Logo"></li>
           <li><a href="#">Men</a></li>
@@ -18,18 +19,20 @@
           <li><a href="#">Girls</a></li>
           <li><a href="#">Customize</a></li>
         </ul>
-      </navLeft>
-      <navRight>
+      </div>
+      </nav>
+      <nav class="navRight">
         <ul>
           <li><a href="#">Help</a></li>
           <li><a href="#">My Account</a></li>
           <li><img class="cart" src="images/cart.jpg" alt="Shopping Cart"></li>
-          <li><a href="#">Shopping Cart (Items)</a></li>
+          <li><a href="#">Shopping Cart (<span id="item">0</span>)</a></li>
         </ul>
-      </navRight>
+      </nav>
     </header>
 
     <section class="banner container clearfix">
+      <div class="padding">
       <div class="shoeGraphic">
         &larr; back to all shoes.
         <img class="shoe" src="images/shoe1.png" alt="Black Converse">
@@ -48,19 +51,20 @@
         <a href="#"><p class="reviews">Read The Reviews</p></a>
         <hr class="dashed">
         <div class="price"><sup>$</sup>120<sup>00</sup></div>
-        <div class="buyButton">Buy Now!</div>
+        <button class="buyButton">Buy Now!</button>
+      </div>
       </div>
     </section>
 
-    <section class="bodyContent container">
+    <section class="bodyContent">
       <ul>
         <div class="tabs">
-          <li><a href="#">Product Details</a></li>
-          <li><a href="#">Size &amp; Fit</a></li>
+          <li><a href="#" class="details">Product Details</a></li>
+          <li><a href="#" class="size">Size &amp; Fit</a></li>
         </div>
         <li class="tabRight"><a href="#">Reviews &#9733;&#9733;&#9733;&#9733;&#9734;</a></li>
       </ul>
-
+      <div id="details">
       <h3><hr>
         Exciting Topic
       </h3>
@@ -69,14 +73,19 @@
         Exciting Topic
       </h5>
       <p>Content here</p>
-      <h3>
-        Find Your Shoe Size &amp; Fit
-      </h3>
-      <p>Content here</p>
-      <h3>
-        What Our Customers Are Saying!
-      </h3>
-      <p>Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed in your purchase.</p>
+      </div>
+      <div  id="size">
+        <h3>
+          Find Your Shoe Size &amp; Fit
+        </h3>
+        <p>Content here</p>
+      </div>
+      <div id="review">
+        <h3>
+          What Our Customers Are Saying!
+        </h3>
+        <p>Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed in your purchase.</p>
+      </div>
     </section>
 
 
@@ -106,8 +115,9 @@
       </div>
     </section>
 
-    <footer>
-        <navLeft>
+    <footer class="container">
+        <nav>
+          <div class="navLeft">
           <ul>
             <li><img class="logo" src="images/logo.jpg" alt="Logo"></li>
             <li><a href="#">Men</a></li>
@@ -116,14 +126,18 @@
             <li><a href="#">Girls</a></li>
             <li><a href="#">Customize</a></li>
           </ul>
-        </navLeft>
-        <navRight>
+        </div>
+        </nav>
+        <nav class="navRight">
           <ul>
             <li><a href="#">Shipping</a> &vert;</li>
             <li><a href="#">Terms &amp; Conditions</a> &vert;</li>
             <li>&copy; Copyright 2017, Sneaker Shop, LLC.</li>
           </ul>
-        </navRight>
+        </nav>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
